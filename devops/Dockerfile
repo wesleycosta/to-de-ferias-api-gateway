@@ -10,9 +10,9 @@ COPY . .
 RUN dotnet restore "src/ToDeFerias.ApiGateway.sln" && dotnet build "src/ToDeFerias.ApiGateway.sln" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "src/ToDeFerias.ApiGateway.Api/ToDeFerias.ApiGateway.Api.csproj" -c Release -o /app/publish
+RUN dotnet publish "src/ToDeFerias.ApiGateway/ToDeFerias.ApiGateway.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "ToDeFerias.ApiGateway.Api.dll"]
+ENTRYPOINT ["dotnet", "ToDeFerias.ApiGateway.dll"]

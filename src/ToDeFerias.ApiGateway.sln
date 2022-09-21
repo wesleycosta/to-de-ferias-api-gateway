@@ -3,7 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32811.315
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToDeFerias.ApiGateway", "ToDeFerias.ApiGateway\ToDeFerias.ApiGateway.csproj", "{D49181FC-C242-4582-9897-925EC2A5783C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ToDeFerias.ApiGateway", "ToDeFerias.ApiGateway\ToDeFerias.ApiGateway.csproj", "{D49181FC-C242-4582-9897-925EC2A5783C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{2E9C3CD6-914A-41C5-B7BD-FE21BF4A650E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution-items", "solution-items", "{B941AD0C-F1CC-47BB-BAB7-F42B72EDCBC9}"
+	ProjectSection(SolutionItems) = preProject
+		..\devops\Dockerfile = ..\devops\Dockerfile
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,6 +25,9 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D49181FC-C242-4582-9897-925EC2A5783C} = {2E9C3CD6-914A-41C5-B7BD-FE21BF4A650E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {923EF23A-D115-4F50-A535-915F66E2675B}

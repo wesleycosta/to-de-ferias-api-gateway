@@ -5,7 +5,7 @@ API gateway com Ocelot.
 [![Build status](https://wlcosta.visualstudio.com/to-de-ferias/_apis/build/status/to-de-ferias-api-gateway-ci)](https://wlcosta.visualstudio.com/to-de-ferias/_build/latest?definitionId=10)
 
 ## Arquitetura
-Veja abaixo a interações entre os microsserviços.
+Veja abaixo as interações entre os microsserviços.
 
 <p align="center">
   <img src="https://github.com/wesleycosta/to-de-ferias-bookings/blob/main/docs/architecture.png" />
